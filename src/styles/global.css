@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+    --font-heading: "Montserrat Variable", sans-serif;
+    --font-body: "Open Sans Variable", sans-serif;
+
+    --color-primary: #1e5ba8;
+    --color-secondary: #e74c3c;
+
+    --color-primary-dark: #153d73;
+    --color-primary-light: #2e7bd4;
+
+    --color-secondary-dark: #c0392b;
+    --color-secondary-light: #ff6b5a;
+
+    --color-gray-50: #f8f9fa;
+    --color-gray-100: #e9ecef;
+    --color-gray-200: #dee2e6;
+    --color-gray-700: #495057;
+    --color-gray-900: #212529;
+
+    --color-background: #ffffff;
+    --color-background-alt: #f8f9fa;
+}
+
+body {
+    font-family: var(--font-body), sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: var(--color-gray-900);
+    background-color: var(--color-background), #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading), sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-primary-dark);
+}
+
+h1 {
+    font-weight: 800;
+}
+
+a {
+    color: var(--color-primary);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-primary-dark);
+}
