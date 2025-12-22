@@ -1,0 +1,78 @@
+<script type="module" client:load>
+    import { gsap } from "https://cdn.skypack.dev/gsap@3.12.5";
+    import { ScrollTrigger } from "https://cdn.skypack.dev/gsap@3.12.5/ScrollTrigger";
+
+    gsap.registerPlugin(ScrollTrigger);
+
+
+    requestAnimationFrame(() => {
+
+        const hero = document.getElementById("hero");
+        const heroBg = document.getElementById("hero-bg");
+        const heroTitle = document.querySelector("[data-hero-title]");
+        const heroItems = gsap.utils.toArray("[data-hero-item]");
+        const scrollHint = document.getElementById("scroll-hint");
+
+        if (!hero || !heroBg || !heroTitle) return;
+
+        /* ESTADOS INICIALES */
+        gsap.set(heroBg, {
+            scale: 1.25,
+            y: 0
+        });
+
+        gsap.set(heroTitle, {
+            opacity: 0,
+            y: 40
+        });
+
+        gsap.set(heroItems, {
+            opacity: 0,
+            y: 30
+        });
+
+        gsap.set(scrollHint, {
+            opacity: 0,
+            y: 10
+        });
+
+        /* TIMELINE PRINCIPAL */
+        const tl = gsap.timeline({
+            defaults: { ease: "power3.out" }
+        });
+
+        tl.to(heroBg, {
+            scale: 1,
+            duration: 3
+        })
+            .to(heroTitle, {
+                opacity: 1,
+                y: 0,
+                duration: 1.1
+            }, "-=2.2")
+            .to(heroItems, {
+                opacity: 1,
+                y: 0,
+                duration: 0.9,
+                stagger: 0.2
+            }, "-=0.8")
+            .to(scrollHint, {
+                opacity: 0.6,
+                y: 0,
+                duration: 0.6
+            }, "-=0.4");
+
+        /* PARALLAX SOBRIO */
+        gsap.to(heroBg, {
+            yPercent: 22,
+            ease: "none",
+            scrollTrigger: {
+                trigger: hero,
+                start: "top top",
+                end: "bottom top",
+                scrub: 1.3
+            }
+        });
+
+    });
+</script>
