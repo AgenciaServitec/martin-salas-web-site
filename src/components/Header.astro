@@ -3,7 +3,7 @@
 
 <header
         id="site-header"
-        class="fixed top-0 left-0 w-full z-50 transition-all duration-500 -translate-y-full opacity-0"
+        class="fixed top-0 left-0 w-full z-50 transition-all duration-500 translate-y-0 opacity-100"
 >
     <div
             id="header-bg"
@@ -28,13 +28,25 @@
             </div>
 
             <nav class="hidden md:flex items-center gap-8">
+                <a href="/#" class="text-sm font-bold text-[#002850] hover:text-[#d4a017] transition-colors">Inicio</a>
                 <a href="/#biography" class="text-sm font-bold text-[#002850] hover:text-[#d4a017] transition-colors">Biografía</a>
                 <!--<a href="/#proposals" class="text-sm font-bold text-[#002850] hover:text-[#d4a017] transition-colors">Propuestas</a>-->
                 <a href="/#contact" class="text-sm font-bold text-[#002850] hover:text-[#d4a017] transition-colors">Contacto</a>
             </nav>
+            <button
+                    id="mobile-menu-btn"
+                    class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg border border-gray-200 bg-white/70 backdrop-blur hover:bg-gray-100 transition"
+                    aria-label="Abrir menú"
+            >
+                <svg class="w-6 h-6 text-[#002850]" fill="none" stroke="currentColor" stroke-width="2"
+                     viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
 
-            <div class="flex items-center gap-4">
-                <a
+            <div class="hidden md:flex items-center gap-4">
+            <a
                         href="/#contact"
                         class="relative group overflow-hidden px-6 py-2.5 rounded-full bg-[#003d82] text-white text-xs font-black uppercase tracking-wider transition-all hover:scale-105 shadow-md shadow-blue-900/20"
                 >
@@ -46,6 +58,43 @@
         </div>
     </div>
 </header>
+<div
+        id="mobile-menu"
+        class="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"
+>
+    <div
+            class="absolute bottom-0 left-0 w-full bg-white rounded-t-3xl shadow-2xl transform translate-y-full transition-transform duration-300"
+            id="mobile-menu-panel"
+    >
+        <div class="px-6 pt-6 pb-8 space-y-6">
+
+            <div class="flex items-center justify-between">
+                <span class="font-black text-[#002850] text-sm uppercase tracking-widest">
+                    Navegación
+                </span>
+                <button id="mobile-menu-close" class="text-gray-400 hover:text-gray-600">
+                    ✕
+                </button>
+            </div>
+
+            <nav class="flex flex-col gap-4 text-lg font-bold">
+                <a href="/#" class="text-[#002850] mobile-link">Inicio</a>
+                <a href="/#biography" class="text-[#002850] mobile-link">Biografía</a>
+                <a href="/#contact" class="text-[#002850] mobile-link">Contacto</a>
+            </nav>
+
+
+            <a
+                    href="/#contact"
+                    class="block text-center py-4 rounded-xl bg-[#003d82] text-white font-black uppercase tracking-wider shadow-lg mobile-link"
+            >
+                Súmate al cambio
+            </a>
+
+        </div>
+    </div>
+</div>
+
 
 <style>
     html {
@@ -54,16 +103,53 @@
 </style>
 <script>
     const header = document.getElementById('site-header');
+    let lastScroll = 0;
 
     window.addEventListener('scroll', () => {
         const currentScroll = window.scrollY;
 
-        if (currentScroll > 100) {
-            header.classList.remove('-translate-y-full', 'opacity-0');
-            header.classList.add('translate-y-0', 'opacity-100');
+        if (currentScroll > 10) {
+            header.classList.add('shadow-lg');
         } else {
+            header.classList.remove('shadow-lg');
+        }
+
+        if (currentScroll > lastScroll && currentScroll > 100) {
             header.classList.add('-translate-y-full', 'opacity-0');
             header.classList.remove('translate-y-0', 'opacity-100');
+        } else {
+            header.classList.remove('-translate-y-full', 'opacity-0');
+            header.classList.add('translate-y-0', 'opacity-100');
         }
+
+        lastScroll = currentScroll;
+    });
+
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuPanel = document.getElementById('mobile-menu-panel');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+    function openMenu() {
+        mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+        mobileMenuPanel.classList.remove('translate-y-full');
+    }
+
+    function closeMenu() {
+        mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+        mobileMenuPanel.classList.add('translate-y-full');
+    }
+
+    mobileMenuBtn.addEventListener('click', openMenu);
+    mobileMenuClose.addEventListener('click', closeMenu);
+    mobileMenu.addEventListener('click', e => {
+        if (e.target === mobileMenu) closeMenu();
+    });
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            closeMenu();
+        });
     });
 </script>
