@@ -58,7 +58,6 @@
     window.addEventListener('scroll', () => {
         const currentScroll = window.scrollY;
 
-        // Aparece después de pasar el Hero (aprox 100px)
         if (currentScroll > 100) {
             header.classList.remove('-translate-y-full', 'opacity-0');
             header.classList.add('translate-y-0', 'opacity-100');
