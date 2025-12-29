@@ -1,0 +1,142 @@
+---
+import ContentWidth from "./ContentWidth.astro";
+---
+
+<section
+        id="biografia"
+        class="relative py-20 lg:py-32 bg-white overflow-hidden"
+>
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute -right-24 top-1/4 w-96 h-96 bg-[#d4a017] rounded-full mix-blend-multiply filter blur-[120px] opacity-10"></div>
+        <div class="absolute -left-24 bottom-1/4 w-96 h-96 bg-[#003d82] rounded-full mix-blend-multiply filter blur-[120px] opacity-10"></div>
+    </div>
+
+    <ContentWidth>
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+
+            <div
+                    class="lg:col-span-5 opacity-0 -translate-x-10 transition-all duration-1000"
+                    data-reveal
+            >
+                <div class="relative group">
+                    <div class="absolute -inset-4 border border-gray-100 rounded-3xl -z-10 transform rotate-3"></div>
+
+                    <div class="relative bg-white rounded-3xl p-6 shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100 overflow-hidden">
+
+                        <div class="absolute top-4 right-4 bg-[#003d82] text-white text-[10px] font-black tracking-widest px-4 py-2 rounded-full shadow-lg z-20">
+                            TRAYECTORIA IMPECABLE
+                        </div>
+
+                        <div class="relative aspect-[4/5] overflow-hidden rounded-2xl bg-gray-50 mb-6">
+                            <img
+                                    src="/logo-martin-salas.png"
+                                    alt="Martín Salas"
+                                    class="w-full h-full object-contain relative z-10 transform group-hover:scale-105 transition-transform duration-700"
+                            />
+                        </div>
+
+                        <div class="space-y-2">
+                            <h3 class="text-3xl font-black text-[#002850]">
+                                Martín Salas
+                            </h3>
+                            <div class="h-1 w-12 bg-[#d4a017]"></div>
+                            <p class="text-[#d4a017] font-bold text-lg">Ex Fiscal Anticorrupción</p>
+                        </div>
+
+                        <div class="mt-6 grid grid-cols-3 gap-2 border-t border-gray-100 pt-6">
+                            <div class="text-center">
+                                <div class="text-xl font-black text-[#002850]">20+</div>
+                                <div class="text-[10px] text-gray-500 font-bold uppercase tracking-tighter">Años Exp.</div>
+                            </div>
+                            <div class="text-center border-x border-gray-100">
+                                <div class="text-xl font-black text-[#d4a017]">100%</div>
+                                <div class="text-[10px] text-gray-500 font-bold uppercase tracking-tighter">Justicia</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-xl font-black text-[#002850]">PERÚ</div>
+                                <div class="text-[10px] text-gray-500 font-bold uppercase tracking-tighter">Prioridad</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                    class="lg:col-span-7 opacity-0 translate-y-12 transition-all duration-1000 delay-200"
+                    data-reveal
+            >
+                <div class="mb-8">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="w-8 h-[2px] bg-[#d4a017]"></span>
+                        <span class="text-xs font-bold tracking-[0.2em] uppercase text-[#002850]">
+                            Sobre el Candidato
+                        </span>
+                    </div>
+
+                    <h2 class="text-4xl md:text-6xl font-black leading-[1.1] text-[#003d82] mb-6">
+                        Experiencia real contra la
+                        <span class="text-[#d4a017]">Corrupción</span>
+                    </h2>
+
+                    <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+                        Con una sólida formación en Derecho y una carrera dedicada a la **reserva moral de la justicia, Martín Salas ha demostrado que los principios no se negocian. No es un político tradicional; es un técnico del sistema legal que conoce por dónde se escapa la justicia.
+                    </p>
+                </div>
+
+                <div class="space-y-6 mb-10">
+                    <div class="flex gap-5 group">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gray-50 rounded-full flex items-center justify-center border border-gray-100 group-hover:bg-[#002850] transition-colors duration-300">
+                            <svg class="w-6 h-6 text-[#002850] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-[#002850]">Ex Fiscal Anticorrupción</h4>
+                            <p class="text-gray-600">Lideró investigaciones de alto nivel contra el crimen organizado y funcionarios públicos.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-5 group">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gray-50 rounded-full flex items-center justify-center border border-gray-100 group-hover:bg-[#002850] transition-colors duration-300">
+                            <svg class="w-6 h-6 text-[#002850] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-[#002850]">Excelencia Académica</h4>
+                            <p class="text-gray-600">Especialista en Derecho Penal y Gestión Pública, enfocado en modernizar el Estado.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-4">
+
+                    <a
+                            target="_blank"
+                            href="/martin-salas.pdf"
+                            class="px-8 py-4 border-2 border-[#003d82] text-[#003d82] font-bold rounded-full hover:bg-gray-50 transition-all"
+                    >
+                        DESCARGAR CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </ContentWidth>
+</section>
+
+<script is:inline>
+    const revealObserver = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove('opacity-0', 'translate-y-12', '-translate-x-10');
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    document.querySelectorAll('[data-reveal]').forEach(el => {
+        revealObserver.observe(el);
+    });
+</script>
