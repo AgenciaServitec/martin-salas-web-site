@@ -32,7 +32,7 @@ body {
     background-color: var(--color-background), #000000;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h5, h6 {
     font-family: var(--font-heading), sans-serif;
     font-weight: 700;
     line-height: 1.2;
@@ -44,7 +44,6 @@ h1 {
 }
 
 a {
-    color: var(--color-primary);
     transition: color 0.3s ease;
 }
 
