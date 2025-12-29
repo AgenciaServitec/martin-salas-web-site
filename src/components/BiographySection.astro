@@ -1,5 +1,8 @@
 ---
 import ContentWidth from "./ContentWidth.astro";
+import {Image} from "astro:assets";
+
+import MartinSalasBiografia from "../../public/biography.jpg";
 ---
 
 <section
@@ -28,11 +31,7 @@ import ContentWidth from "./ContentWidth.astro";
                         </div>
 
                         <div class="relative aspect-[4/5] overflow-hidden rounded-2xl bg-gray-50 mb-6">
-                            <img
-                                    src="/biography.jpg"
-                                    alt="Martín Salas"
-                                    class="w-full h-full object-contain relative z-10 transform group-hover:scale-105 transition-transform duration-700"
-                            />
+                            <Image src={MartinSalasBiografia} alt="Martín Salas - Candidato al Senado" class="w-full h-full object-contain relative z-10 transform group-hover:scale-105 transition-transform duration-700" />
                         </div>
 
                         <div class="space-y-2">

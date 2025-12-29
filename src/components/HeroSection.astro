@@ -1,16 +1,17 @@
 ---
+import { Image } from 'astro:assets';
+
 import HeroAnimations from "./animations/HeroAnimations.astro";
 import ContentWidth from "./ContentWidth.astro";
+
+import MartinSalas from "../../public/hero.png";
+import MachuPicchu from "../../public/fondo-machu-picchu.png";
 ---
 
 <section id="hero" class="relative min-h-screen overflow-hidden pt-10 md:pt-1 pb-0 bg-white flex flex-col justify-end">
     <div class="absolute inset-0 z-0">
         <div class="relative w-full h-full">
-            <img
-                    src="/fondo-machu-picchu.png"
-                    alt="Candidato al Senado del Perú"
-                    class="w-full h-full object-cover object-top opacity-50"
-            />
+            <Image src={MachuPicchu} alt="Imagen de Machu Picchu en estilo dibujo" class="w-full h-full object-cover object-top opacity-50" loading="eager" />
             <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white"></div>
         </div>
     </div>
@@ -68,8 +69,7 @@ import ContentWidth from "./ContentWidth.astro";
 
                 <div class="md:col-span-2 lg:col-span-5 relative flex justify-center items-end order-1 md:order-2 lg:order-2">
                     <div data-hero-item class="relative w-full max-w-[240px] sm:max-w-[280px] md:max-w-[320px] lg:max-w-sm xl:max-w-md">
-                        <img src="/hero.png" alt="Martín Salas - Candidato al Senado"
-                             class="w-full h-auto object-contain relative z-10 block" />
+                        <Image src={MartinSalas} alt="Martín Salas - Candidato al Senado" class="w-full h-auto object-contain relative z-10 block" loading="eager" />
                     </div>
                 </div>
 

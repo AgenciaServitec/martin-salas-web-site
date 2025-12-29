@@ -47,7 +47,7 @@ import ContentWidth from "./ContentWidth.astro";
                         </div>
                         <div class="flex flex-col text-left">
                             <span class="text-[10px] font-black text-[#d4a017] uppercase tracking-[0.2em] mb-1">Escríbenos</span>
-                            <span class="text-xl font-bold text-[#002850]">contacto@martinsalas.pe</span>
+                            <a href="mailto:contactos@el-9-app.pe" target="_blank" class="text-xl font-bold text-[#002850]">contactos@el-9-app.pe</a>
                         </div>
                     </div>
                 </div>
@@ -63,23 +63,23 @@ import ContentWidth from "./ContentWidth.astro";
                         <div class="p-8 md:p-14">
                             <form id="contactForm" class="space-y-6">
                                 <div class="space-y-2">
-                                    <label class="text-xs font-black text-[#002850] uppercase tracking-widest ml-1">Nombre Completo</label>
+                                    <label for="fullName" class="text-xs font-black text-[#002850] uppercase tracking-widest ml-1">Nombre Completo</label>
                                     <input required type="text" id="fullName" name="fullName" placeholder="Tu nombre completo" class="w-full px-6 py-4 bg-gray-50 border-2 border-gray-100 rounded-2xl focus:bg-white focus:border-[#d4a017] transition-all outline-none text-[#002850] font-medium placeholder:text-gray-400" />
                                 </div>
 
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div class="space-y-2">
-                                        <label class="text-xs font-black text-[#002850] uppercase tracking-widest ml-1">Correo electrónico</label>
+                                        <label for="email" class="text-xs font-black text-[#002850] uppercase tracking-widest ml-1">Correo electrónico</label>
                                         <input required type="email" id="email" name="email" placeholder="ejemplo@correo.com" class="w-full px-6 py-4 bg-gray-50 border-2 border-gray-100 rounded-2xl focus:bg-white focus:border-[#d4a017] transition-all outline-none text-[#002850] font-medium placeholder:text-gray-400" />
                                     </div>
                                     <div class="space-y-2">
-                                        <label class="text-xs font-black text-[#002850] uppercase tracking-widest ml-1">Teléfono / Celular</label>
+                                        <label for="phone" class="text-xs font-black text-[#002850] uppercase tracking-widest ml-1">Teléfono / Celular</label>
                                         <input required type="tel" id="phone" name="phone" maxlength="9" placeholder="999 999 999" class="w-full px-6 py-4 bg-gray-50 border-2 border-gray-100 rounded-2xl focus:bg-white focus:border-[#d4a017] transition-all outline-none text-[#002850] font-medium placeholder:text-gray-400" />
                                     </div>
                                 </div>
 
                                 <div class="space-y-2">
-                                    <label class="text-xs font-black text-[#002850] uppercase tracking-widest ml-1">Mensaje o Propuesta</label>
+                                    <label for="message" class="text-xs font-black text-[#002850] uppercase tracking-widest ml-1">Mensaje o Propuesta</label>
                                     <textarea required id="message" name="message" rows="4" placeholder="Cuéntanos cómo podemos trabajar por el Perú..." class="w-full px-6 py-4 bg-gray-50 border-2 border-gray-100 rounded-2xl focus:bg-white focus:border-[#d4a017] transition-all outline-none resize-none text-[#002850] font-medium placeholder:text-gray-400"></textarea>
                                 </div>
 
