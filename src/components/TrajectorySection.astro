@@ -1,0 +1,117 @@
+---
+import ContentWidth from "./ContentWidth.astro";
+import {Image} from "astro:assets";
+
+import EntrevistaRadioTv from "../../public/martin_caso_kouri.jpg";
+import MinisterioPublico from "../../public/ministerio_publico.png";
+import AcuniaYMartin from "../../public/acunia_y_martin.jpeg";
+---
+
+<section id="noticias" class="relative py-20 lg:py-32 bg-gray-50 overflow-hidden">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none">
+        <div class="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-white to-transparent"></div>
+    </div>
+
+    <ContentWidth>
+        <div class="relative z-10 mb-16 md:flex items-end justify-between gap-6">
+            <div class="max-w-2xl">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="w-8 h-[2px] bg-[#d4a017]"></span>
+                    <span class="text-xs font-bold tracking-[0.2em] uppercase text-[#002850]">
+                        Trayectoria
+                    </span>
+                </div>
+                <h2 class="text-4xl md:text-6xl font-black text-[#003d82] leading-tight">
+                    Lucha contra <span class="text-[#d4a017]"> la corrupción</span>
+                </h2>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
+
+            <article class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-gray-100 flex flex-col" data-reveal>
+                <div class="relative overflow-hidden aspect-video">
+                    <Image
+                            src={EntrevistaRadioTv}
+                            alt="Entrevista en de radio y TV"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                    />
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <time class="text-xs font-bold text-[#d4a017] mb-3 uppercase tracking-widest">2011 – 2016</time>
+                    <h3 class="text-xl font-black text-[#002850] mb-4 leading-snug group-hover:text-[#003d82] transition-colors">
+                        Caso Álex Kouri – Corrupción en el Callao
+                    </h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6 line-clamp-3">
+                        Como fiscal anticorrupción, participó en la investigación que culminó con la condena a prisión del exgobernador del Callao, Álex Kouri, por actos de corrupción vinculados a la Vía Expresa del Callao.
+                        Su labor se desarrolló en un contexto de presiones y amenazas, manteniendo firme su compromiso con la legalidad y la justicia.
+                    </p>
+                    <!--<div class="mt-auto pt-6 border-t border-gray-50">-->
+                    <!--    <span class="text-[#003d82] font-bold text-sm inline-flex items-center gap-2 group-hover:gap-4 transition-all">-->
+                    <!--        LEER MÁS-->
+                    <!--        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">-->
+                    <!--            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>-->
+                    <!--        </svg>-->
+                    <!--    </span>-->
+                    <!--</div>-->
+                </div>
+            </article>
+
+            <article class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-gray-100 flex flex-col" data-reveal>
+                <div class="relative overflow-hidden aspect-video">
+                    <Image
+                            src={MinisterioPublico}
+                            alt="Ministerio Publico"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                    />
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <time class="text-xs font-bold text-[#d4a017] mb-3 uppercase tracking-widest">2018 – 2020</time>
+                    <h3 class="text-xl font-black text-[#002850] mb-4 leading-snug group-hover:text-[#003d82] transition-colors">
+                        Investigaciones vinculadas a "Los Cuellos Blancos del Puerto"
+                    </h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6 line-clamp-3">
+                        Formó parte de funciones vinculadas al Equipo Especial del caso “Los Cuellos Blancos del Puerto”, una de las mayores investigaciones contra redes de corrupción en el sistema judicial peruano, que involucró a jueces, fiscales y altos funcionarios.
+                    </p>
+                    <!--<div class="mt-auto pt-6 border-t border-gray-50">-->
+                    <!--    <span class="text-[#003d82] font-bold text-sm inline-flex items-center gap-2 group-hover:gap-4 transition-all">-->
+                    <!--        LEER MÁS-->
+                    <!--        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">-->
+                    <!--            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>-->
+                    <!--        </svg>-->
+                    <!--    </span>-->
+                    <!--</div>-->
+                </div>
+            </article>
+
+            <article class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-gray-100 flex flex-col" data-reveal>
+                <div class="relative overflow-hidden aspect-video">
+                    <Image
+                            src={AcuniaYMartin}
+                            alt="Martin Salas vocero de Alianza por el progreso"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                    />
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <time class="text-xs font-bold text-[#d4a017] mb-3 uppercase tracking-widest">2024 – Actualidad</time>
+                    <h3 class="text-xl font-black text-[#002850] mb-4 leading-snug group-hover:text-[#003d82] transition-colors">
+                        Vocero político y defensor del Estado de Derecho
+                    </h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6 line-clamp-3">
+                        Tras su trayectoria en el Ministerio Público, asumió un rol público como vocero político, defendiendo la independencia de la justicia, la ética pública y el fortalecimiento institucional.
+                        Hoy, postula al Senado por Alianza para el Progreso, con la experiencia de haber combatido la corrupción desde dentro del sistema.
+                    </p>
+                    <!--<div class="mt-auto pt-6 border-t border-gray-50">-->
+                    <!--    <span class="text-[#003d82] font-bold text-sm inline-flex items-center gap-2 group-hover:gap-4 transition-all">-->
+                    <!--        LEER MÁS-->
+                    <!--        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">-->
+                    <!--            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>-->
+                    <!--        </svg>-->
+                    <!--    </span>-->
+                    <!--</div>-->
+                </div>
+            </article>
+
+        </div>
+    </ContentWidth>
+</section>
