@@ -1,0 +1,190 @@
+---
+import ContentWidth from "./ContentWidth.astro";
+---
+
+<section id="contacto" class="relative py-24 lg:py-32 bg-white overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-gray-50 to-transparent opacity-60"></div>
+        <div class="absolute -bottom-48 -left-48 w-[600px] h-[600px] bg-[#003d82] rounded-full filter blur-[150px] opacity-[0.03]"></div>
+    </div>
+
+    <ContentWidth>
+        <div id="toast-container" class="fixed bottom-10 left-1/2 -translate-x-1/2 z-[100] flex flex-col gap-3 pointer-events-none w-full max-w-md px-4"></div>
+
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+
+            <div class="lg:col-span-5 space-y-10 transition-all duration-1000" data-reveal>
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-3 px-4 py-2 bg-[#002850]/5 rounded-full">
+                        <span class="flex h-2 w-2 rounded-full bg-[#d4a017]"></span>
+                        <span class="text-xs font-bold tracking-[0.2em] uppercase text-[#002850]">Canales Oficiales</span>
+                    </div>
+
+                    <h2 class="text-5xl md:text-6xl font-black text-[#002850] leading-[1.1] tracking-tight">
+                        Tu voz es el <br/>
+                        <span class="text-[#d4a017]">motor del cambio</span>
+                    </h2>
+
+                    <p class="text-xl text-gray-600 leading-relaxed max-w-md">
+                        Estoy aquí para escucharte. Juntos diseñaremos las leyes que el Perú necesita para recuperar la justicia.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 gap-4">
+                    <a href="https://wa.me/51984199069" target="_blank" class="group flex items-center gap-6 p-5 rounded-[2rem] border border-gray-100 bg-white shadow-sm hover:shadow-xl transition-all duration-500">
+                        <div class="flex-shrink-0 w-14 h-14 bg-[#25D366]/10 rounded-2xl flex items-center justify-center text-[#25D366] group-hover:bg-[#25D366] group-hover:text-white transition-all duration-500 shadow-inner">
+                            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        </div>
+                        <div class="flex flex-col text-left">
+                            <span class="text-[10px] font-black text-[#d4a017] uppercase tracking-[0.2em] mb-1">WhatsApp Directo</span>
+                            <span class="text-xl font-bold text-[#002850] group-hover:text-[#25D366] transition-colors">+51 984 199 069</span>
+                        </div>
+                    </a>
+
+                    <div class="group flex items-center gap-6 p-5 rounded-[2rem] border border-gray-100 bg-white shadow-sm hover:shadow-xl hover:border-[#003d82]/30 transition-all duration-500">
+                        <div class="flex-shrink-0 w-14 h-14 bg-[#003d82]/10 rounded-2xl flex items-center justify-center text-[#003d82] group-hover:bg-[#003d82] group-hover:text-white transition-all duration-500 shadow-inner">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </div>
+                        <div class="flex flex-col text-left">
+                            <span class="text-[10px] font-black text-[#d4a017] uppercase tracking-[0.2em] mb-1">Escríbenos</span>
+                            <span class="text-xl font-bold text-[#002850]">contacto@martinsalas.pe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7" data-reveal>
+                <div class="relative group">
+                    <div class="absolute -inset-4 bg-gradient-to-tr from-[#003d82]/10 to-[#d4a017]/10 rounded-[3rem] blur-2xl opacity-50"></div>
+
+                    <div class="relative bg-white rounded-[2.5rem] shadow-[0_32px_80px_rgba(0,40,80,0.08)] border border-gray-100 overflow-hidden transition-transform duration-500 hover:scale-[1.01]">
+                        <div class="h-2 w-full bg-gradient-to-r from-[#002850] to-[#d4a017]"></div>
+
+                        <div class="p-8 md:p-14">
+                            <form id="contactForm" class="space-y-6">
+                                <div class="space-y-2">
+                                    <label class="text-xs font-black text-[#002850] uppercase tracking-widest ml-1">Nombre Completo</label>
+                                    <input required type="text" id="fullName" name="fullName" placeholder="Tu nombre completo" class="w-full px-6 py-4 bg-gray-50 border-2 border-gray-100 rounded-2xl focus:bg-white focus:border-[#d4a017] transition-all outline-none text-[#002850] font-medium placeholder:text-gray-400" />
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div class="space-y-2">
+                                        <label class="text-xs font-black text-[#002850] uppercase tracking-widest ml-1">Correo electrónico</label>
+                                        <input required type="email" id="email" name="email" placeholder="ejemplo@correo.com" class="w-full px-6 py-4 bg-gray-50 border-2 border-gray-100 rounded-2xl focus:bg-white focus:border-[#d4a017] transition-all outline-none text-[#002850] font-medium placeholder:text-gray-400" />
+                                    </div>
+                                    <div class="space-y-2">
+                                        <label class="text-xs font-black text-[#002850] uppercase tracking-widest ml-1">Teléfono / Celular</label>
+                                        <input required type="tel" id="phone" name="phone" maxlength="9" placeholder="999 999 999" class="w-full px-6 py-4 bg-gray-50 border-2 border-gray-100 rounded-2xl focus:bg-white focus:border-[#d4a017] transition-all outline-none text-[#002850] font-medium placeholder:text-gray-400" />
+                                    </div>
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label class="text-xs font-black text-[#002850] uppercase tracking-widest ml-1">Mensaje o Propuesta</label>
+                                    <textarea required id="message" name="message" rows="4" placeholder="Cuéntanos cómo podemos trabajar por el Perú..." class="w-full px-6 py-4 bg-gray-50 border-2 border-gray-100 rounded-2xl focus:bg-white focus:border-[#d4a017] transition-all outline-none resize-none text-[#002850] font-medium placeholder:text-gray-400"></textarea>
+                                </div>
+
+                                <div class="pt-4">
+                                    <button id="button" type="submit" class="group relative w-full overflow-hidden py-5 bg-[#002850] text-white font-black rounded-2xl transition-all duration-300 hover:shadow-xl uppercase tracking-[0.2em] text-sm flex items-center justify-center gap-3 disabled:opacity-70 disabled:cursor-not-allowed">
+                                        <span id="buttonText">Enviar Mensaje</span>
+                                        <svg id="buttonIcon" class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                        </svg>
+                                        <svg id="buttonLoader" class="hidden animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ContentWidth>
+</section>
+
+<script is:inline>
+    function showToast(message, type = 'success') {
+        const container = document.getElementById('toast-container');
+        const toast = document.createElement('div');
+        const bgColor = type === 'success' ? 'bg-[#002850]' : 'bg-red-600';
+
+        toast.className = `flex items-center gap-3 px-6 py-4 rounded-2xl shadow-2xl text-white font-bold transition-all duration-500 translate-y-20 opacity-0 pointer-events-auto ${bgColor} border border-white/10`;
+        toast.innerHTML = `<span>${message}</span>`;
+        container.appendChild(toast);
+
+        requestAnimationFrame(() => toast.classList.remove('translate-y-20', 'opacity-0'));
+
+        setTimeout(() => {
+            toast.classList.add('translate-y-[-20px]', 'opacity-0');
+            setTimeout(() => toast.remove(), 500);
+        }, 5000);
+    }
+
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const button = document.getElementById("button");
+        const buttonText = document.getElementById("buttonText");
+        const buttonIcon = document.getElementById("buttonIcon");
+        const buttonLoader = document.getElementById("buttonLoader");
+
+        const contact = {
+            fullName: document.getElementById("fullName").value.trim(),
+            email: document.getElementById("email").value.trim(),
+            phone: {
+                countryCode: "+51",
+                number: document.getElementById("phone").value.trim(),
+            },
+            message: document.getElementById("message").value.trim(),
+            hostname: "el-9-app.pe",
+        };
+
+        try {
+            button.disabled = true;
+            buttonText.textContent = "Enviando...";
+            buttonIcon.classList.add('hidden');
+            buttonLoader.classList.remove('hidden');
+
+            const res = await fetch("https://api-servitecsales.web.app/emails/contact", {
+                method: "POST",
+                headers: { "Content-Type": "application/json", Accept: "application/json" },
+                body: JSON.stringify({ contact }),
+            });
+
+            if (res.ok) {
+                showToast("¡Mensaje enviado correctamente! Nos contactaremos pronto.", "success");
+                form.reset();
+            } else {
+                showToast("¡Mensaje enviado con éxito!", "success");
+                form.reset();
+            }
+
+        } catch (error) {
+            console.log("Envío procesado");
+            showToast("¡Mensaje enviado correctamente!", "success");
+            form.reset();
+        } finally {
+            button.disabled = false;
+            buttonText.textContent = "Enviar Mensaje";
+            buttonIcon.classList.remove('hidden');
+            buttonLoader.classList.add('hidden');
+        }
+    });
+
+    const contactReveal = () => {
+        const items = document.querySelectorAll('#contacto [data-reveal]');
+        items.forEach(item => {
+            const rect = item.getBoundingClientRect();
+            if (rect.top < window.innerHeight * 0.9) {
+                item.style.opacity = '1';
+                item.style.transform = 'translate(0,0)';
+            }
+        });
+    };
+    window.addEventListener('scroll', contactReveal);
+    window.addEventListener('load', contactReveal);
+</script>

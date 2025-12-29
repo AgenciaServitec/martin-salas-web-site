@@ -3,19 +3,22 @@ import HeroAnimations from "./animations/HeroAnimations.astro";
 import ContentWidth from "./ContentWidth.astro";
 ---
 
-<section id="hero" class="relative min-h-screen overflow-hidden">
-    <ContentWidth>
-        <div class="absolute inset-0 ">
+<section id="hero" class="relative min-h-screen overflow-hidden pt-10 md:pt-1 pb-0 bg-white flex flex-col justify-end">
+    <div class="absolute inset-0 z-0">
+        <div class="relative w-full h-full">
             <img
                     src="/fondo-machu-picchu.png"
                     alt="Candidato al Senado del Perú"
                     class="w-full h-full object-cover object-top opacity-50"
             />
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white"></div>
         </div>
+    </div>
 
+    <ContentWidth>
         <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 md:gap-8 lg:gap-6 xl:gap-8 items-center">
-                <div class="md:col-span-2 lg:col-span-4 text-left space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 xl:space-y-8 order-2 md:order-1 lg:order-1">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 md:gap-8 lg:gap-6 xl:gap-8 items-end">
+                <div class="md:col-span-2 lg:col-span-4 text-left space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 xl:space-y-8 order-2 md:order-1 lg:order-1 pb-12 md:pb-24">
                     <div data-hero-item class="flex items-center gap-2 text-[#002850]">
                         <svg class="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" fill="#002850" stroke="currentColor" viewBox="0 0 640 640">
                             <path d="M320 64C324.6 64 329.2 65 333.4 66.9L521.8 146.8C543.8 156.1 560.2 177.8 560.1 204C559.6 303.2 518.8 484.7 346.5 567.2C329.8 575.2 310.4 575.2 293.7 567.2C121.3 484.7 80.6 303.2 80.1 204C80 177.8 96.4 156.1 118.4 146.8L306.7 66.9C310.9 65 315.4 64 320 64zM320 130.8L320 508.9C458 442.1 495.1 294.1 496 205.5L320 130.9L320 130.9z"/>
@@ -38,11 +41,9 @@ import ContentWidth from "./ContentWidth.astro";
                             Con experiencia real enfrentando la corrupción desde el sistema. Hoy doy un paso al frente para defender la justicia y la transparencia.
                         </p>
                     </div>
+
                     <div data-hero-item class="relative hidden md:hidden lg:inline-block pt-2 lg:pt-4 justify-self-center">
-                        <a
-                                href="/#mensaje"
-                                class="group relative flex items-center gap-4"
-                        >
+                        <a href="/#mensaje" class="group relative flex items-center gap-4">
                             <div class="relative">
                                 <div class="absolute inset-0 rounded-full border-2 border-[#003d82] animate-ping opacity-30"></div>
                                 <div class="relative w-24 h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 bg-[#003d82] rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-2xl">
@@ -64,14 +65,15 @@ import ContentWidth from "./ContentWidth.astro";
                         </a>
                     </div>
                 </div>
-                <div class="md:col-span-2 lg:col-span-5 relative flex justify-center items-center order-1 md:order-2 lg:order-2">
+
+                <div class="md:col-span-2 lg:col-span-5 relative flex justify-center items-end order-1 md:order-2 lg:order-2">
                     <div data-hero-item class="relative w-full max-w-[240px] sm:max-w-[280px] md:max-w-[320px] lg:max-w-sm xl:max-w-md">
                         <img src="/hero.png" alt="Martín Salas - Candidato al Senado"
-                             class="w-full h-auto object-contain relative z-10"
-                             style="filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.3)) drop-shadow(0 35px 65px rgba(0, 0, 0, 0.25));" />
+                             class="w-full h-auto object-contain relative z-10 block" />
                     </div>
                 </div>
-                <div class="hidden md:hidden lg:block lg:col-span-3 order-3">
+
+                <div class="hidden md:hidden lg:block lg:col-span-3 order-3 pb-12 md:pb-24">
                     <div data-hero-item class="bg-yellow-50/90 backdrop-blur-sm rounded-2xl p-5 lg:p-6 xl:p-8 shadow-2xl border border-gray-200 transform hover:scale-105 transition-transform">
                         <a href="/#vision" class="block group">
                             <div class="flex items-start justify-between mb-4">
@@ -89,102 +91,35 @@ import ContentWidth from "./ContentWidth.astro";
                         </a>
                     </div>
                 </div>
-                <div class="md:col-span-4 lg:hidden w-full order-4">
-                    <div data-hero-item class="bg-yellow-50/90 backdrop-blur-sm rounded-2xl p-4 sm:p-5 md:p-6 shadow-xl border border-gray-200">
-                        <a href="/#vision" class="block group">
-                            <div class="flex items-start justify-between mb-2 sm:mb-3">
-                                <span class="text-sm md:text-base font-bold text-gray-800">Conoce mis propuestas</span>
-                                <svg class="w-5 h-5 text-gray-400 group-hover:text-[#003d82] transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                </svg>
-                            </div>
-                            <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-3 md:mb-4">
-                                Un Senado firme e independiente, comprometido con la lucha contra la corrupción, la justicia y el bienestar de todos.
-                            </p>
-                            <div class="border-t border-gray-300 pt-3">
-                                <p class="text-base md:text-lg font-semibold text-orange-500">La corrupción se enfrenta, no se negocia.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
-        <div
-                data-hero-item
-                class="fixed right-3 sm:right-4 lg:right-6 top-1/2 -translate-y-1/2 z-20 hidden md:flex flex-col gap-2 lg:gap-3"
-        >
-            <a
-                    href="https://www.facebook.com/profile.php?id=61585526221281"
-                    target="_blank"
-                    class="w-10 h-10 lg:w-11 lg:h-11 xl:w-12 xl:h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-[#003d82] hover:text-white transition-all shadow-lg hover:scale-110 group"
-            >
-                <svg class="w-4 h-4 lg:w-5 lg:h-5 text-gray-800 group-hover:text-white transition-colors" fill="currentcolor" viewBox="0 0 640 640">
-                    <path d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z"/>
+
+        <div data-hero-item class="fixed right-4 sm:right-6 lg:right-8 top-1/2 -translate-y-1/2 z-30 flex flex-col gap-4">
+            <a href="https://wa.me/51984199069" target="_blank" aria-label="WhatsApp" class="group relative w-12 h-12 lg:w-14 lg:h-14 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center shadow-lg border border-gray-100 hover:bg-[#25D366] hover:text-white transition-all duration-300 hover:scale-110">
+                <svg class="w-6 h-6 lg:w-7 lg:h-7" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                 </svg>
             </a>
-            <a
-                    href="https://twitter.com"
-                    target="_blank"
-                    class="w-10 h-10 lg:w-11 lg:h-11 xl:w-12 xl:h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-[#003d82] hover:text-white transition-all shadow-lg hover:scale-110 group"
-            >
-                <svg class="w-4 h-4 lg:w-5 lg:h-5 text-gray-800 group-hover:text-white transition-colors" fill="currentcolor" viewBox="0 0 640 640">
-                    <path d="M523.4 215.7C523.7 220.2 523.7 224.8 523.7 229.3C523.7 368 418.1 527.9 225.1 527.9C165.6 527.9 110.4 510.7 64 480.8C72.4 481.8 80.6 482.1 89.3 482.1C138.4 482.1 183.5 465.5 219.6 437.3C173.5 436.3 134.8 406.1 121.5 364.5C128 365.5 134.5 366.1 141.3 366.1C150.7 366.1 160.1 364.8 168.9 362.5C120.8 352.8 84.8 310.5 84.8 259.5L84.8 258.2C98.8 266 115 270.9 132.2 271.5C103.9 252.7 85.4 220.5 85.4 184.1C85.4 164.6 90.6 146.7 99.7 131.1C151.4 194.8 229 236.4 316.1 240.9C314.5 233.1 313.5 225 313.5 216.9C313.5 159.1 360.3 112 418.4 112C448.6 112 475.9 124.7 495.1 145.1C518.8 140.6 541.6 131.8 561.7 119.8C553.9 144.2 537.3 164.6 515.6 177.6C536.7 175.3 557.2 169.5 576 161.4C561.7 182.2 543.8 200.7 523.4 215.7z"/>
+            <a href="https://www.tiktok.com/@el_9_de_peru?_r=1&_t=ZS-92dDIWUEk3o" target="_blank" aria-label="TikTok" class="group relative w-12 h-12 lg:w-14 lg:h-14 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center shadow-lg border border-gray-100 hover:bg-gray-400 hover:text-white transition-all duration-300 hover:scale-110">
+                <svg class="w-6 h-6 lg:w-7 lg:h-7" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
                 </svg>
             </a>
-            <a
-                    href="https://instagram.com"
-                    target="_blank"
-                    class="w-10 h-10 lg:w-11 lg:h-11 xl:w-12 xl:h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-[#003d82] hover:text-white transition-all shadow-lg hover:scale-110 group"
-            >
-                <svg class="w-4 h-4 lg:w-5 lg:h-5 text-gray-800 group-hover:text-white transition-colors" fill="currentcolor" viewBox="0 0 640 640">
-                    <path d="M320.3 205C256.8 204.8 205.2 256.2 205 319.7C204.8 383.2 256.2 434.8 319.7 435C383.2 435.2 434.8 383.8 435 320.3C435.2 256.8 383.8 205.2 320.3 205zM319.7 245.4C360.9 245.2 394.4 278.5 394.6 319.7C394.8 360.9 361.5 394.4 320.3 394.6C279.1 394.8 245.6 361.5 245.4 320.3C245.2 279.1 278.5 245.6 319.7 245.4zM413.1 200.3C413.1 185.5 425.1 173.5 439.9 173.5C454.7 173.5 466.7 185.5 466.7 200.3C466.7 215.1 454.7 227.1 439.9 227.1C425.1 227.1 413.1 215.1 413.1 200.3zM542.8 227.5C541.1 191.6 532.9 159.8 506.6 133.6C480.4 107.4 448.6 99.2 412.7 97.4C375.7 95.3 264.8 95.3 227.8 97.4C192 99.1 160.2 107.3 133.9 133.5C107.6 159.7 99.5 191.5 97.7 227.4C95.6 264.4 95.6 375.3 97.7 412.3C99.4 448.2 107.6 480 133.9 506.2C160.2 532.4 191.9 540.6 227.8 542.4C264.8 544.5 375.7 544.5 412.7 542.4C448.6 540.7 480.4 532.5 506.6 506.2C532.8 480 541 448.2 542.8 412.3C544.9 375.3 544.9 264.5 542.8 227.5zM495 452C487.2 471.6 472.1 486.7 452.4 494.6C422.9 506.3 352.9 503.6 320.3 503.6C287.7 503.6 217.6 506.2 188.2 494.6C168.6 486.8 153.5 471.7 145.6 452C133.9 422.5 136.6 352.5 136.6 319.9C136.6 287.3 134 217.2 145.6 187.8C153.4 168.2 168.5 153.1 188.2 145.2C217.7 133.5 287.7 136.2 320.3 136.2C352.9 136.2 423 133.6 452.4 145.2C472 153 487.1 168.1 495 187.8C506.7 217.3 504 287.3 504 319.9C504 352.5 506.7 422.6 495 452z"/>
-                </svg>
-            </a>
-            <a
-                    href="https://tiktok.com"
-                    target="_blank"
-                    class="w-10 h-10 lg:w-11 lg:h-11 xl:w-12 xl:h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-[#003d82] hover:text-white transition-all shadow-lg hover:scale-110 group"
-            >
-                <svg class="w-4 h-4 lg:w-5 lg:h-5 text-gray-800 group-hover:text-white transition-colors" fill="currentcolor" viewBox="0 0 640 640">
-                    <path d="M544.5 273.9C500.5 274 457.5 260.3 421.7 234.7L421.7 413.4C421.7 446.5 411.6 478.8 392.7 506C373.8 533.2 347.1 554 316.1 565.6C285.1 577.2 251.3 579.1 219.2 570.9C187.1 562.7 158.3 545 136.5 520.1C114.7 495.2 101.2 464.1 97.5 431.2C93.8 398.3 100.4 365.1 116.1 336C131.8 306.9 156.1 283.3 185.7 268.3C215.3 253.3 248.6 247.8 281.4 252.3L281.4 342.2C266.4 337.5 250.3 337.6 235.4 342.6C220.5 347.6 207.5 357.2 198.4 369.9C189.3 382.6 184.4 398 184.5 413.8C184.6 429.6 189.7 444.8 199 457.5C208.3 470.2 221.4 479.6 236.4 484.4C251.4 489.2 267.5 489.2 282.4 484.3C297.3 479.4 310.4 469.9 319.6 457.2C328.8 444.5 333.8 429.1 333.8 413.4L333.8 64H421.8C421.7 71.4 422.4 78.9 423.7 86.2C426.8 102.5 433.1 118.1 442.4 131.9C451.7 145.7 463.7 157.5 477.6 166.5C497.5 179.6 520.8 186.6 544.6 186.6L544.6 274z"/>
+            <a href="https://www.facebook.com/profile.php?id=61585508254476" target="_blank" aria-label="Facebook" class="group relative w-12 h-12 lg:w-14 lg:h-14 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center shadow-lg border border-gray-100 hover:bg-blue-300 hover:text-white transition-all duration-300 hover:scale-110">
+                <svg class="w-6 h-6 lg:w-7 lg:h-7" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                 </svg>
             </a>
         </div>
 
-        <div
-                data-hero-item
-                class="fixed bottom-4 sm:bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-20 md:hidden"
-        >
-            <a
-                    href="/#mensaje"
-                    class="flex flex-col items-center gap-2 group"
-            >
-                <div class="relative">
-                    <div class="absolute inset-0 rounded-full border-2 border-[#003d82] animate-ping opacity-30"></div>
-                    <div class="relative w-14 h-14 sm:w-16 sm:h-16 bg-[#003d82] rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
-                        <svg class="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M8 5v14l11-7z"/>
-                        </svg>
-                    </div>
-                </div>
-                <span class="text-xs font-semibold text-gray-800 bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full">
-                Escucha mi Mensaje
-            </span>
-            </a>
-        </div>
     </ContentWidth>
 </section>
 
 <style>
     @keyframes spin-slow {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
     }
-
     .animate-spin-slow {
         animation: spin-slow 20s linear infinite;
     }

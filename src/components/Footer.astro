@@ -1,242 +1,92 @@
+---
+import ContentWidth from "./ContentWidth.astro";
+---
 
-<footer class="relative bg-gradient-to-b from-neutral-950 via-neutral-900 to-black text-white overflow-hidden" id="legal">
-
-    <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
-        <div class="absolute top-0 left-1/4 w-96 h-96 bg-red-500/10 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+<footer class="relative bg-[#002850] text-white overflow-hidden" id="legal">
+    <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-[#d4a017] rounded-full blur-[120px]"></div>
     </div>
 
-    <div class="relative z-10 max-w-7xl mx-auto px-6 py-20">
-
-        <div class="mb-16 text-center">
-            <div class="inline-flex items-center gap-3 mb-6">
-                <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center shadow-2xl">
-                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3l7 4v5c0 5-3.5 9-7 10-3.5-1-7-5-7-10V7l7-4z"/>
-                    </svg>
-                </div>
-                <div class="text-left">
-                    <h3 class="text-3xl font-extrabold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-                        Campaña al Senado
-                    </h3>
-                    <p class="text-sm text-white/60 font-medium">República del Perú</p>
-                </div>
-            </div>
-
-            <p class="text-white/70 max-w-3xl mx-auto leading-relaxed text-lg">
-                Este sitio web forma parte de la campaña electoral de un candidato al Senado de la República del Perú.
-                Toda la información difundida cumple con la <span class="text-white font-semibold">normativa electoral vigente</span>.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
-
-            <div class="group">
-                <div class="flex items-start gap-3 mb-4">
-                    <div class="flex-shrink-0 w-12 h-12 bg-red-500/10 rounded-xl flex items-center justify-center border border-red-500/20 group-hover:bg-red-500/20 transition-colors">
-                        <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
+    <div class="relative z-10 py-16 lg:py-20">
+        <ContentWidth>
+            <div class="mb-16 text-center">
+                <div class="inline-flex flex-col items-center gap-4 mb-6">
+                    <div class="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-2xl p-2">
+                        <svg class="w-12 h-12 text-[#002850]" fill="currentColor" viewBox="0 0 640 640">
+                            <path d="M320 64C324.6 64 329.2 65 333.4 66.9L521.8 146.8C543.8 156.1 560.2 177.8 560.1 204C559.6 303.2 518.8 484.7 346.5 567.2C329.8 575.2 310.4 575.2 293.7 567.2C121.3 484.7 80.6 303.2 80.1 204C80 177.8 96.4 156.1 118.4 146.8L306.7 66.9C310.9 65 315.4 64 320 64zM320 130.8L320 508.9C458 442.1 495.1 294.1 496 205.5L320 130.9L320 130.9z"/>
                         </svg>
                     </div>
-                    <h4 class="font-bold text-xl text-white">Aviso electoral</h4>
+                    <div>
+                        <h3 class="text-3xl font-black tracking-tight text-white uppercase">
+                            MARTÍN <span class="text-[#d4a017]">SALAS</span>
+                        </h3>
+                        <p class="text-[#d4a017] text-xs font-bold tracking-[0.3em] uppercase mt-1">Al Senado de la República</p>
+                    </div>
                 </div>
-                <p class="text-white/70 text-sm leading-relaxed pl-15">
-                    La propaganda electoral difundida a través de este medio es responsabilidad
-                    del equipo de campaña del candidato, conforme a la legislación peruana y a
-                    las disposiciones del
-                    <a href="https://www.jne.gob.pe" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:text-red-300 underline font-semibold">
-                        Jurado Nacional de Elecciones (JNE)
-                    </a>.
+
+                <p class="text-white max-w-2xl mx-auto leading-relaxed text-base">
+                    Unidos por la justicia, la verdad y un futuro libre de corrupción.
+                    Este espacio está dedicado a la transparencia y al servicio del ciudadano peruano.
                 </p>
             </div>
 
-            <div class="group">
-                <div class="flex items-start gap-3 mb-4">
-                    <div class="flex-shrink-0 w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center border border-blue-500/20 group-hover:bg-blue-500/20 transition-colors">
-                        <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                        </svg>
-                    </div>
-                    <h4 class="font-bold text-xl text-white">Responsable</h4>
-                </div>
-                <ul class="text-white/70 text-sm space-y-3 pl-15">
-                    <li class="flex flex-col gap-1">
-                        <span class="text-white/50 text-xs uppercase tracking-wider">Responsable político</span>
-                        <span class="text-white font-semibold">Martin Salas</span>
-                    </li>
-                    <li class="flex flex-col gap-1">
-                        <span class="text-white/50 text-xs uppercase tracking-wider">Organización política</span>
-                        <span class="text-white font-semibold">Nombre del partido o movimiento</span>
-                    </li>
-                    <li class="flex flex-col gap-1">
-                        <span class="text-white/50 text-xs uppercase tracking-wider">Personero legal</span>
-                        <span class="text-white font-semibold">Nombre del personero</span>
-                    </li>
-                </ul>
-            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 border-y border-white/20 py-16">
 
-            <div class="group">
-                <div class="flex items-start gap-3 mb-4">
-                    <div class="flex-shrink-0 w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center border border-green-500/20 group-hover:bg-green-500/20 transition-colors">
-                        <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                        </svg>
-                    </div>
-                    <h4 class="font-bold text-xl text-white">Transparencia</h4>
+                <div class="space-y-4">
+                    <h4 class="font-black text-lg text-[#d4a017] flex items-center gap-2">
+                        AVISO ELECTORAL
+                    </h4>
+                    <p class="text-white text-sm leading-relaxed">
+                        Propaganda electoral fiscalizada conforme a la Ley de Organizaciones Políticas y las disposiciones del
+                        <a href="https://www.jne.gob.pe" target="_blank" class="text-[#d4a017] hover:text-white underline font-bold transition-colors">Jurado Nacional de Elecciones (JNE)</a>.
+                    </p>
                 </div>
-                <ul class="text-white/70 text-sm space-y-3 pl-15">
-                    <li>
-                        <a href="/politica-privacidad" class="flex items-center gap-2 hover:text-white transition-colors group/link">
-                            <svg class="w-4 h-4 text-white/40 group-hover/link:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                            </svg>
-                            <span class="border-b border-white/20 group-hover/link:border-white transition-colors">
-                                Política de privacidad
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/terminos-condiciones" class="flex items-center gap-2 hover:text-white transition-colors group/link">
-                            <svg class="w-4 h-4 text-white/40 group-hover/link:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                            </svg>
-                            <span class="border-b border-white/20 group-hover/link:border-white transition-colors">
-                                Términos y condiciones
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/aviso-legal" class="flex items-center gap-2 hover:text-white transition-colors group/link">
-                            <svg class="w-4 h-4 text-white/40 group-hover/link:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                            </svg>
-                            <span class="border-b border-white/20 group-hover/link:border-white transition-colors">
-                                Aviso legal electoral
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/financiamiento" class="flex items-center gap-2 hover:text-white transition-colors group/link">
-                            <svg class="w-4 h-4 text-white/40 group-hover/link:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span class="border-b border-white/20 group-hover/link:border-white transition-colors">
-                                Financiamiento de campaña
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
 
-        </div>
-
-        <div class="mb-12">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-8 p-8 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10">
-                <div>
-                    <h4 class="font-bold text-lg text-white mb-2">Síguenos en redes sociales</h4>
-                    <p class="text-white/60 text-sm">Mantente informado sobre propuestas y actividades</p>
+                <div class="space-y-4">
+                    <h4 class="font-black text-lg text-[#d4a017] flex items-center gap-2">
+                        RESPONSABLES
+                    </h4>
+                    <ul class="text-sm space-y-3">
+                        <li class="flex justify-between border-b border-white/10 pb-2">
+                            <span class="text-gray-300 uppercase text-[10px] font-bold">Candidato:</span>
+                            <span class="font-bold text-white uppercase">Martín Salas Zegarra</span>
+                        </li>
+                        <li class="flex justify-between border-b border-white/10 pb-2">
+                            <span class="text-gray-300 uppercase text-[10px] font-bold">Organización:</span>
+                            <span class="font-bold text-white uppercase">Alianza por el Progreso</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="flex gap-4">
-                    <a
-                            href="https://facebook.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="w-12 h-12 bg-white/10 hover:bg-blue-600 rounded-xl flex items-center justify-center transition-all hover:scale-110 group"
-                            aria-label="Facebook"
-                    >
-                        <svg class="w-6 h-6 text-white/70 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                        </svg>
-                    </a>
-                    <a
-                            href="https://twitter.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="w-12 h-12 bg-white/10 hover:bg-sky-500 rounded-xl flex items-center justify-center transition-all hover:scale-110 group"
-                            aria-label="Twitter"
-                    >
-                        <svg class="w-6 h-6 text-white/70 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                        </svg>
-                    </a>
-                    <a
-                            href="https://instagram.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="w-12 h-12 bg-white/10 hover:bg-gradient-to-br hover:from-purple-600 hover:to-pink-600 rounded-xl flex items-center justify-center transition-all hover:scale-110 group"
-                            aria-label="Instagram"
-                    >
-                        <svg class="w-6 h-6 text-white/70 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
-                        </svg>
-                    </a>
-                    <a
-                            href="https://youtube.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="w-12 h-12 bg-white/10 hover:bg-red-600 rounded-xl flex items-center justify-center transition-all hover:scale-110 group"
-                            aria-label="YouTube"
-                    >
-                        <svg class="w-6 h-6 text-white/70 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                        </svg>
-                    </a>
-                    <a
-                            href="https://tiktok.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="w-12 h-12 bg-white/10 hover:bg-gray-900 rounded-xl flex items-center justify-center transition-all hover:scale-110 group"
-                            aria-label="TikTok"
-                    >
-                        <svg class="w-6 h-6 text-white/70 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
-                        </svg>
-                    </a>
+
+                <div class="space-y-4">
+                    <h4 class="font-black text-lg text-[#d4a017] flex items-center gap-2">
+                        TRANSPARENCIA
+                    </h4>
+                    <nav class="grid grid-cols-1 gap-2">
+                        <a href="#" class="text-sm text-white hover:text-[#d4a017] transition-colors flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-[#d4a017] rounded-full"></span> Política de Privacidad
+                        </a>
+                        <a href="#" class="text-sm text-white hover:text-[#d4a017] transition-colors flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-[#d4a017] rounded-full"></span> Financiamiento de Campaña
+                        </a>
+                        <a href="#" class="text-sm text-white hover:text-[#d4a017] transition-colors flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-[#d4a017] rounded-full"></span> Plan de Trabajo 2025
+                        </a>
+                    </nav>
                 </div>
             </div>
-        </div>
-        <div class="relative mb-12">
-            <div class="absolute inset-0 flex items-center">
-                <div class="w-full border-t border-white/10"></div>
-            </div>
-            <div class="relative flex justify-center">
-                <span class="px-6 bg-gradient-to-r from-transparent via-neutral-900 to-transparent">
-                    <svg class="w-8 h-8 text-white/20" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z" clip-rule="evenodd"></path>
-                    </svg>
-                </span>
-            </div>
-        </div>
-
-        <div class="space-y-6">
-            <div class="flex items-center justify-center gap-3 p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 max-w-3xl mx-auto">
-                <svg class="w-6 h-6 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <p class="text-sm text-white/80 text-center">
-                    <span class="font-semibold text-white">Campaña fiscalizada por el JNE.</span>
-                    Cumple con las normas de propaganda electoral, protección de datos y transparencia del Jurado Nacional de Elecciones.
+            <div class="text-center pt-4">
+                <p class="text-[10px] text-[#d4a017] font-black uppercase tracking-[0.2em] mb-1">Sitio Oficial de Campaña</p>
+                <p class="text-xs text-white font-medium">
+                    © 2025 Martín Salas. Todos los derechos reservados.
                 </p>
             </div>
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
-                <p class="text-xs text-white/50 max-w-2xl leading-relaxed">
-                    © 2025 Campaña al Senado de la República del Perú. Todos los derechos reservados.
-                    El contenido de este sitio cumple con las normativas electorales vigentes.
-                </p>
-
-                <div class="flex items-center gap-3">
-                    <span class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 rounded-lg border border-white/10">
-                        <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                        </svg>
-                        <span class="text-xs font-semibold text-white">Sitio oficial</span>
-                    </span>
-                </div>
-            </div>
-        </div>
-
+        </ContentWidth>
     </div>
-    <div class="h-1 bg-gradient-to-r from-red-600 via-white to-red-600"></div>
 
+    <div class="flex h-2 w-full">
+        <div class="w-1/3 bg-[#E30613]"></div>
+        <div class="w-1/3 bg-white"></div>
+        <div class="w-1/3 bg-[#E30613]"></div>
+    </div>
 </footer>
